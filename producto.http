@@ -1,0 +1,32 @@
+###
+POST http://localhost:900/producto HTTP/1.1
+Content-type: application/json
+
+{
+    "nombre" : "producto 2",
+    "precio" : 5120,
+    "stock": 94
+
+}
+
+###
+GET http://localhost:900/producto HTTP/1.1
+
+###
+GET http://localhost:900/producto/62aa3594f533d042de864638 HTTP/1.1
+ 
+
+
+###
+PUT http://localhost:900/producto/62aa3594f533d042de864638 HTTP/1.1
+Content-type: application/json
+
+{
+    "nombre" : "producto 4",
+    "precio" : 51,
+    "stock": 1
+
+}
+
+###
+DELETE http://localhost:900/producto/62aa3594f533d042de864638 HTTP/1.1
